@@ -12,8 +12,8 @@ from google.protobuf import symbol_database as _symbol_database
 _sym_db = _symbol_database.Default()
 
 
-from common.net import address_pb2 as common_dot_net_dot_address__pb2
-from common.protocol import server_spec_pb2 as common_dot_protocol_dot_server__spec__pb2
+from xtlsapi.xray_api.common.net import address_pb2 as common_dot_net_dot_address__pb2
+from xtlsapi.xray_api.common.protocol import server_spec_pb2 as common_dot_protocol_dot_server__spec__pb2
 
 
 DESCRIPTOR = _descriptor.FileDescriptor(

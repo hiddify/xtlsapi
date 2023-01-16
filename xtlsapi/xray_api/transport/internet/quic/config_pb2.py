@@ -11,8 +11,8 @@ from google.protobuf import symbol_database as _symbol_database
 _sym_db = _symbol_database.Default()
 
 
-from common.serial import typed_message_pb2 as common_dot_serial_dot_typed__message__pb2
-from common.protocol import headers_pb2 as common_dot_protocol_dot_headers__pb2
+from xtlsapi.xray_api.common.serial import typed_message_pb2 as common_dot_serial_dot_typed__message__pb2
+from xtlsapi.xray_api.common.protocol import headers_pb2 as common_dot_protocol_dot_headers__pb2
 
 
 DESCRIPTOR = _descriptor.FileDescriptor(

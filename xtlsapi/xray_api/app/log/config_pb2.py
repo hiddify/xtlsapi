@@ -12,7 +12,7 @@ from google.protobuf import symbol_database as _symbol_database
 _sym_db = _symbol_database.Default()
 
 
-from common.log import log_pb2 as common_dot_log_dot_log__pb2
+from xtlsapi.xray_api.common.log import log_pb2 as common_dot_log_dot_log__pb2
 
 
 DESCRIPTOR = _descriptor.FileDescriptor(
