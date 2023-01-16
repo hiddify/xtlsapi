@@ -1,5 +1,5 @@
 import grpc
-from vump_grpc_client.v2ray_api.app.stats.command import command_pb2
+from xtlsapi.xray_api.app.stats.command import command_pb2
 from .._base import BaseService
 
 

@@ -1,7 +1,7 @@
 from grpc._channel import _InactiveRpcError
 
-from vump_grpc_client import exceptions
-from vump_grpc_client.v2ray_api.app.log.command import config_pb2
+from xtlsapi import exceptions
+from xtlsapi.xray_api.app.log.command import config_pb2
 
 from .._base import BaseService
 

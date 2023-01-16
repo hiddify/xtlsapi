@@ -1,11 +1,10 @@
 from grpc._channel import _InactiveRpcError
-
-from vump_grpc_client import utils, exceptions
-from vump_grpc_client.v2ray_api.proxy.vmess import account_pb2
-from vump_grpc_client.v2ray_api.common.protocol import user_pb2
-from vump_grpc_client.v2ray_api.app.proxyman.command import command_pb2
-
+from xtlsapi.xray_api.proxy.vmess import account_pb2
+from xtlsapi.xray_api.common.protocol import user_pb2
+from xtlsapi.xray_api.app.proxyman.command import command_pb2
+from xtlsapi.ext import utils
 from .._base import BaseService
+from xtlsapi import exceptions
 
 
 class AddClient(BaseService):

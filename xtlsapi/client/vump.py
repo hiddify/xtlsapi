@@ -1,6 +1,6 @@
 from grpc import insecure_channel as grpc_insecure_channel
 
-from vump_grpc_client.api_services import APIService
+from xtlsapi.api_services import APIService
 
 
 class VUMPClient(APIService):

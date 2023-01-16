@@ -3,7 +3,7 @@ import math
 import socket
 import secrets
 
-from vump_grpc_client.v2ray_api.common.serial import typed_message_pb2
+from xtlsapi.xray_api.common.serial import typed_message_pb2
 
 
 def to_typed_message(message):
