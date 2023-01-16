@@ -1,1 +1,1 @@
-from .vump import VUMPClient
+from .XrayClient import XrayClient

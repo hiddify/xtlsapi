@@ -1,6 +1,6 @@
 from grpc._channel import _InactiveRpcError
-
-from xtlsapi import utils, exceptions
+from xtlsapi.ext import utils
+from xtlsapi import exceptions
 from xtlsapi.xray_api.app.proxyman.command import command_pb2
 
 from .._base import BaseService
