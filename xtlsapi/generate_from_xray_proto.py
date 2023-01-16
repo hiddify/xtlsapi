@@ -1,3 +1,4 @@
+#https://www.plcnext-community.net/makersblog/grpc-python-read-and-write-process-data/
 import glob
 import os
 from pathlib import Path
