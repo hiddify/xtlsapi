@@ -4,7 +4,8 @@
 [![codecov](https://codecov.io/gh/hiddify/xtlsapi/branch/main/graph/badge.svg?token=xtlsapi_token_here)](https://codecov.io/gh/hiddify/xtlsapi)
 [![CI](https://github.com/hiddify/xtlsapi/actions/workflows/main.yml/badge.svg)](https://github.com/hiddify/xtlsapi/actions/workflows/main.yml)
 
-Awesome xtlsapi created by hiddify
+
+Python library to communicate with xray core
 
 ## Install it from PyPI
 
