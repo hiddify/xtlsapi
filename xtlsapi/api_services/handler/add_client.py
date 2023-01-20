@@ -34,4 +34,4 @@ class AddClient(BaseService):
             elif details.endswith(f"handler not found: {inbound_tag}"):
                 raise exceptions.InboundNotFound(details, inbound_tag)
             else:
-                raise exceptions.V2RayException(details)
+                raise exceptions.XRayException(details)

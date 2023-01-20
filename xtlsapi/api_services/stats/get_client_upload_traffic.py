@@ -12,4 +12,4 @@ class GetClientUploadTraffic(BaseService):
                 )
             ).stat.value
         except grpc.RpcError:
-            return 0
+            return None

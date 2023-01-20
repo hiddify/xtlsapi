@@ -1,7 +1,7 @@
-from ._base import V2RayException
+from ._base import XRayException
 
 
-class EmailAlreadyExists(V2RayException):
+class EmailAlreadyExists(XRayException):
     def __init__(self, details, email):
         self.email = email
         super().__init__(details)

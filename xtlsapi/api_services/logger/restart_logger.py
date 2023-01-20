@@ -14,4 +14,4 @@ class RestartLogger(BaseService):
             )
         except _InactiveRpcError as e:
             details = e.details()
-            raise exceptions.V2RayException(details)
+            raise exceptions.XRayException(details)
