@@ -33,10 +33,9 @@ def generate_random_email(tld='vump.com', hex_count=8):
 
 
 def generate_random_port():
-    tcp = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    tcp.bind(('', 0))
-    addr, port = tcp.getsockname()
-    tcp.close()
+    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as tcp:
+        tcp.bind(('', 0))
+        addr, port = tcp.getsockname()
     return port
 
 
