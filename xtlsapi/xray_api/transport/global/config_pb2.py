@@ -16,14 +16,15 @@ from xtlsapi.xray_api.transport.internet import config_pb2 as transport_dot_inte
 
 DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x1dtransport/global/config.proto\x12\x0exray.transport\x1a\x1ftransport/internet/config.proto\"R\n\x06\x43onfig\x12\x44\n\x12transport_settings\x18\x01 \x03(\x0b\x32(.xray.transport.internet.TransportConfig:\x02\x18\x01\x42\x61\n\x19\x63om.xray.transport.globalP\x01Z*github.com/xtls/xray-core/transport/global\xaa\x02\x15Xray.Transport.Globalb\x06proto3')
 
-_builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, globals())
-_builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'transport.global.config_pb2', globals())
+_globals = globals()
+_builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
+_builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'transport.global.config_pb2', _globals)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
   DESCRIPTOR._serialized_options = b'\n\031com.xray.transport.globalP\001Z*github.com/xtls/xray-core/transport/global\252\002\025Xray.Transport.Global'
   _CONFIG._options = None
   _CONFIG._serialized_options = b'\030\001'
-  _CONFIG._serialized_start=82
-  _CONFIG._serialized_end=164
+  _globals['_CONFIG']._serialized_start=82
+  _globals['_CONFIG']._serialized_end=164
 # @@protoc_insertion_point(module_scope)

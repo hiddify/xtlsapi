@@ -16,12 +16,13 @@ from xtlsapi.xray_api.common.protocol import server_spec_pb2 as common_dot_proto
 
 DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n!proxy/vless/outbound/config.proto\x12\x19xray.proxy.vless.outbound\x1a!common/protocol/server_spec.proto\"=\n\x06\x43onfig\x12\x33\n\x05vnext\x18\x01 \x03(\x0b\x32$.xray.common.protocol.ServerEndpointBm\n\x1d\x63om.xray.proxy.vless.outboundP\x01Z.github.com/xtls/xray-core/proxy/vless/outbound\xaa\x02\x19Xray.Proxy.Vless.Outboundb\x06proto3')
 
-_builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, globals())
-_builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'proxy.vless.outbound.config_pb2', globals())
+_globals = globals()
+_builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
+_builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'proxy.vless.outbound.config_pb2', _globals)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
   DESCRIPTOR._serialized_options = b'\n\035com.xray.proxy.vless.outboundP\001Z.github.com/xtls/xray-core/proxy/vless/outbound\252\002\031Xray.Proxy.Vless.Outbound'
-  _CONFIG._serialized_start=99
-  _CONFIG._serialized_end=160
+  _globals['_CONFIG']._serialized_start=99
+  _globals['_CONFIG']._serialized_end=160
 # @@protoc_insertion_point(module_scope)

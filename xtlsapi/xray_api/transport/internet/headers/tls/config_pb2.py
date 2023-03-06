@@ -15,12 +15,13 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n+transport/internet/headers/tls/config.proto\x12#xray.transport.internet.headers.tls\"\x0e\n\x0cPacketConfigB\x8b\x01\n\'com.xray.transport.internet.headers.tlsP\x01Z8github.com/xtls/xray-core/transport/internet/headers/tls\xaa\x02#Xray.Transport.Internet.Headers.Tlsb\x06proto3')
 
-_builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, globals())
-_builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'transport.internet.headers.tls.config_pb2', globals())
+_globals = globals()
+_builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
+_builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'transport.internet.headers.tls.config_pb2', _globals)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
   DESCRIPTOR._serialized_options = b'\n\'com.xray.transport.internet.headers.tlsP\001Z8github.com/xtls/xray-core/transport/internet/headers/tls\252\002#Xray.Transport.Internet.Headers.Tls'
-  _PACKETCONFIG._serialized_start=84
-  _PACKETCONFIG._serialized_end=98
+  _globals['_PACKETCONFIG']._serialized_start=84
+  _globals['_PACKETCONFIG']._serialized_end=98
 # @@protoc_insertion_point(module_scope)
