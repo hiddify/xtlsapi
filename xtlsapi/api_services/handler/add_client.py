@@ -8,7 +8,7 @@ from xtlsapi import exceptions
 
 
 class AddClient(BaseService):
-    def add_client(self, inbound_tag, user_id_or_password, email,protocol, level=None, alter_id=None,flow=None,cipher=None):
+    def add_client(self, inbound_tag, user_id_or_password, email,protocol='vless', level=None, alter_id=None,flow=None,cipher=None):
         try:
             if protocol=='vmess':
                 from xtlsapi.xray_api.proxy.vmess import account_pb2
