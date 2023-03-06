@@ -55,7 +55,7 @@ class AddClient(BaseService):
                     ),
                 )
             )
-            return user_id
+            return user_id_or_password
         except _InactiveRpcError as e:
             details = e.details()
             if details.endswith(f"User {email} already exists."):
