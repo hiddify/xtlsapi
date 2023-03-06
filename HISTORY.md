@@ -7,10 +7,28 @@ Changelog
 
 New
 ~~~
+- Change default to vless. [hiddify]
+- Add vless,trojan,shadowsocks account creatation. [hiddify]
+
+Fix
+~~~
+- Typo. [hiddify]
+
+Other
+~~~~~
+- Merge branch 'main' of github.com:hiddify/xtlsapi. [hiddify]
+
+
+1.1.0 (2023-03-06)
+------------------
+
+New
+~~~
 - Update to xtls v7.5. [Your Name]
 
 Other
 ~~~~~
+- Release: version 1.1.0 🚀 [Your Name]
 - Merge pull request #5 from hoshython/patch-1. [Hiddify]
 
   Update utils.py
