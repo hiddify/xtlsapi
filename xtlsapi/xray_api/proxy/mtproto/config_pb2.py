@@ -16,16 +16,17 @@ from xtlsapi.xray_api.common.protocol import user_pb2 as common_dot_protocol_dot
 
 DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x1aproxy/mtproto/config.proto\x12\x12xray.proxy.mtproto\x1a\x1a\x63ommon/protocol/user.proto\"\x19\n\x07\x41\x63\x63ount\x12\x0e\n\x06secret\x18\x01 \x01(\x0c\"8\n\x0cServerConfig\x12(\n\x04user\x18\x01 \x03(\x0b\x32\x1a.xray.common.protocol.User\"\x0e\n\x0c\x43lientConfigBX\n\x16\x63om.xray.proxy.mtprotoP\x01Z\'github.com/xtls/xray-core/proxy/mtproto\xaa\x02\x12Xray.Proxy.Mtprotob\x06proto3')
 
-_builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, globals())
-_builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'proxy.mtproto.config_pb2', globals())
+_globals = globals()
+_builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
+_builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'proxy.mtproto.config_pb2', _globals)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
   DESCRIPTOR._serialized_options = b'\n\026com.xray.proxy.mtprotoP\001Z\'github.com/xtls/xray-core/proxy/mtproto\252\002\022Xray.Proxy.Mtproto'
-  _ACCOUNT._serialized_start=78
-  _ACCOUNT._serialized_end=103
-  _SERVERCONFIG._serialized_start=105
-  _SERVERCONFIG._serialized_end=161
-  _CLIENTCONFIG._serialized_start=163
-  _CLIENTCONFIG._serialized_end=177
+  _globals['_ACCOUNT']._serialized_start=78
+  _globals['_ACCOUNT']._serialized_end=103
+  _globals['_SERVERCONFIG']._serialized_start=105
+  _globals['_SERVERCONFIG']._serialized_end=161
+  _globals['_CLIENTCONFIG']._serialized_start=163
+  _globals['_CLIENTCONFIG']._serialized_end=177
 # @@protoc_insertion_point(module_scope)

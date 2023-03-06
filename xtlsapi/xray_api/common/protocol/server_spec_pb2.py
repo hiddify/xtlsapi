@@ -17,12 +17,13 @@ from xtlsapi.xray_api.common.protocol import user_pb2 as common_dot_protocol_dot
 
 DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n!common/protocol/server_spec.proto\x12\x14xray.common.protocol\x1a\x18\x63ommon/net/address.proto\x1a\x1a\x63ommon/protocol/user.proto\"v\n\x0eServerEndpoint\x12,\n\x07\x61\x64\x64ress\x18\x01 \x01(\x0b\x32\x1b.xray.common.net.IPOrDomain\x12\x0c\n\x04port\x18\x02 \x01(\r\x12(\n\x04user\x18\x03 \x03(\x0b\x32\x1a.xray.common.protocol.UserB^\n\x18\x63om.xray.common.protocolP\x01Z)github.com/xtls/xray-core/common/protocol\xaa\x02\x14Xray.Common.Protocolb\x06proto3')
 
-_builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, globals())
-_builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'common.protocol.server_spec_pb2', globals())
+_globals = globals()
+_builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
+_builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'common.protocol.server_spec_pb2', _globals)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
   DESCRIPTOR._serialized_options = b'\n\030com.xray.common.protocolP\001Z)github.com/xtls/xray-core/common/protocol\252\002\024Xray.Common.Protocol'
-  _SERVERENDPOINT._serialized_start=113
-  _SERVERENDPOINT._serialized_end=231
+  _globals['_SERVERENDPOINT']._serialized_start=113
+  _globals['_SERVERENDPOINT']._serialized_end=231
 # @@protoc_insertion_point(module_scope)
