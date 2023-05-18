@@ -1,6 +1,6 @@
 from grpc import insecure_channel as grpc_insecure_channel
 
-from xtlsapi.api_services import APIService
+from xtlsapi.sinbox_api_services import APIService
 
 
 class SingboxClient(APIService):
