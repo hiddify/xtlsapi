@@ -2,8 +2,16 @@ Changelog
 =========
 
 
-(unreleased)
-------------
+3.0.0 (2023-05-18)
+------------------
+
+New
+~~~
+- Add singbox. [hiddify]
+
+
+2.0.0 (2023-03-06)
+------------------
 
 New
 ~~~
@@ -16,6 +24,7 @@ Fix
 
 Other
 ~~~~~
+- Release: version 2.0.0 🚀 [hiddify]
 - Merge branch 'main' of github.com:hiddify/xtlsapi. [hiddify]
 
 
