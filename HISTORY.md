@@ -5,9 +5,25 @@ Changelog
 (unreleased)
 ------------
 
+New
+~~~
+- Add reset to statsquery. [hiddify]
+
+Fix
+~~~
+- Bug. [hiddify]
+
+
+3.0.3 (2023-05-18)
+------------------
+
 Fix
 ~~~
 - Typo. [hiddify]
+
+Other
+~~~~~
+- Release: version 3.0.3 🚀 [hiddify]
 
 
 3.0.2 (2023-05-18)
