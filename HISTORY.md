@@ -7,7 +7,19 @@ Changelog
 
 Fix
 ~~~
+- Typo. [hiddify]
+
+
+3.0.2 (2023-05-18)
+------------------
+
+Fix
+~~~
 - Bug. [hiddify]
+
+Other
+~~~~~
+- Release: version 3.0.2 🚀 [hiddify]
 
 
 3.0.1 (2023-05-18)
