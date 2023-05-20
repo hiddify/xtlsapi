@@ -2,7 +2,7 @@
 """Client and server classes corresponding to protobuf-defined services."""
 import grpc
 
-import stats_pb2 as stats__pb2
+from . import stats_pb2 as stats__pb2
 
 
 class StatsServiceStub(object):
