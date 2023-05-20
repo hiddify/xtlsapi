@@ -2,7 +2,7 @@
 """Client and server classes corresponding to protobuf-defined services."""
 import grpc
 
-from . import stats_pb2 as stats__pb2
+import stats_pb2 as stats__pb2
 
 
 class StatsServiceStub(object):
@@ -15,17 +15,17 @@ class StatsServiceStub(object):
             channel: A grpc.Channel.
         """
         self.GetStats = channel.unary_unary(
-                '/experimental.v2rayapi.StatsService/GetStats',
+                '/v2ray.core.app.stats.command.StatsService/GetStats',
                 request_serializer=stats__pb2.GetStatsRequest.SerializeToString,
                 response_deserializer=stats__pb2.GetStatsResponse.FromString,
                 )
         self.QueryStats = channel.unary_unary(
-                '/experimental.v2rayapi.StatsService/QueryStats',
+                '/v2ray.core.app.stats.command.StatsService/QueryStats',
                 request_serializer=stats__pb2.QueryStatsRequest.SerializeToString,
                 response_deserializer=stats__pb2.QueryStatsResponse.FromString,
                 )
         self.GetSysStats = channel.unary_unary(
-                '/experimental.v2rayapi.StatsService/GetSysStats',
+                '/v2ray.core.app.stats.command.StatsService/GetSysStats',
                 request_serializer=stats__pb2.SysStatsRequest.SerializeToString,
                 response_deserializer=stats__pb2.SysStatsResponse.FromString,
                 )
@@ -72,7 +72,7 @@ def add_StatsServiceServicer_to_server(servicer, server):
             ),
     }
     generic_handler = grpc.method_handlers_generic_handler(
-            'experimental.v2rayapi.StatsService', rpc_method_handlers)
+            'v2ray.core.app.stats.command.StatsService', rpc_method_handlers)
     server.add_generic_rpc_handlers((generic_handler,))
 
 
@@ -91,7 +91,7 @@ class StatsService(object):
             wait_for_ready=None,
             timeout=None,
             metadata=None):
-        return grpc.experimental.unary_unary(request, target, '/experimental.v2rayapi.StatsService/GetStats',
+        return grpc.experimental.unary_unary(request, target, '/v2ray.core.app.stats.command.StatsService/GetStats',
             stats__pb2.GetStatsRequest.SerializeToString,
             stats__pb2.GetStatsResponse.FromString,
             options, channel_credentials,
@@ -108,7 +108,7 @@ class StatsService(object):
             wait_for_ready=None,
             timeout=None,
             metadata=None):
-        return grpc.experimental.unary_unary(request, target, '/experimental.v2rayapi.StatsService/QueryStats',
+        return grpc.experimental.unary_unary(request, target, '/v2ray.core.app.stats.command.StatsService/QueryStats',
             stats__pb2.QueryStatsRequest.SerializeToString,
             stats__pb2.QueryStatsResponse.FromString,
             options, channel_credentials,
@@ -125,7 +125,7 @@ class StatsService(object):
             wait_for_ready=None,
             timeout=None,
             metadata=None):
-        return grpc.experimental.unary_unary(request, target, '/experimental.v2rayapi.StatsService/GetSysStats',
+        return grpc.experimental.unary_unary(request, target, '/v2ray.core.app.stats.command.StatsService/GetSysStats',
             stats__pb2.SysStatsRequest.SerializeToString,
             stats__pb2.SysStatsResponse.FromString,
             options, channel_credentials,

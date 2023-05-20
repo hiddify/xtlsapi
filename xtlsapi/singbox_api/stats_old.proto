@@ -1,12 +1,7 @@
 syntax = "proto3";
 
-package v2ray.core.app.stats.command;
-option csharp_namespace = "V2Ray.Core.App.Stats.Command";
-option go_package = "github.com/v2fly/v2ray-core/v5/app/stats/command";
-option java_package = "com.v2ray.core.app.stats.command";
-option java_multiple_files = true;
-
-import "extensions.proto";
+package experimental.v2rayapi;
+option go_package = "github.com/sagernet/sing-box/experimental/v2rayapi";
 
 message GetStatsRequest {
   // Name of the stat counter.
@@ -55,9 +50,4 @@ service StatsService {
   rpc GetStats(GetStatsRequest) returns (GetStatsResponse) {}
   rpc QueryStats(QueryStatsRequest) returns (QueryStatsResponse) {}
   rpc GetSysStats(SysStatsRequest) returns (SysStatsResponse) {}
-}
-
-message Config {
-  option (v2ray.core.common.protoext.message_opt).type = "grpcservice";
-  option (v2ray.core.common.protoext.message_opt).short_name = "stats";
 }

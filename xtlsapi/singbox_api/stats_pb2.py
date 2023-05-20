@@ -11,30 +11,35 @@ from google.protobuf import symbol_database as _symbol_database
 _sym_db = _symbol_database.Default()
 
 
+import extensions_pb2 as extensions__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x0bstats.proto\x12\x15\x65xperimental.v2rayapi\".\n\x0fGetStatsRequest\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\r\n\x05reset\x18\x02 \x01(\x08\"#\n\x04Stat\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\x03\"=\n\x10GetStatsResponse\x12)\n\x04stat\x18\x01 \x01(\x0b\x32\x1b.experimental.v2rayapi.Stat\"U\n\x11QueryStatsRequest\x12\x0f\n\x07pattern\x18\x01 \x01(\t\x12\r\n\x05reset\x18\x02 \x01(\x08\x12\x10\n\x08patterns\x18\x03 \x03(\t\x12\x0e\n\x06regexp\x18\x04 \x01(\x08\"?\n\x12QueryStatsResponse\x12)\n\x04stat\x18\x01 \x03(\x0b\x32\x1b.experimental.v2rayapi.Stat\"\x11\n\x0fSysStatsRequest\"\xc2\x01\n\x10SysStatsResponse\x12\x14\n\x0cNumGoroutine\x18\x01 \x01(\r\x12\r\n\x05NumGC\x18\x02 \x01(\r\x12\r\n\x05\x41lloc\x18\x03 \x01(\x04\x12\x12\n\nTotalAlloc\x18\x04 \x01(\x04\x12\x0b\n\x03Sys\x18\x05 \x01(\x04\x12\x0f\n\x07Mallocs\x18\x06 \x01(\x04\x12\r\n\x05\x46rees\x18\x07 \x01(\x04\x12\x13\n\x0bLiveObjects\x18\x08 \x01(\x04\x12\x14\n\x0cPauseTotalNs\x18\t \x01(\x04\x12\x0e\n\x06Uptime\x18\n \x01(\r2\xb4\x02\n\x0cStatsService\x12]\n\x08GetStats\x12&.experimental.v2rayapi.GetStatsRequest\x1a\'.experimental.v2rayapi.GetStatsResponse\"\x00\x12\x63\n\nQueryStats\x12(.experimental.v2rayapi.QueryStatsRequest\x1a).experimental.v2rayapi.QueryStatsResponse\"\x00\x12`\n\x0bGetSysStats\x12&.experimental.v2rayapi.SysStatsRequest\x1a\'.experimental.v2rayapi.SysStatsResponse\"\x00\x42\x34Z2github.com/sagernet/sing-box/experimental/v2rayapib\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x0bstats.proto\x12\x1cv2ray.core.app.stats.command\x1a\x10\x65xtensions.proto\".\n\x0fGetStatsRequest\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\r\n\x05reset\x18\x02 \x01(\x08\"#\n\x04Stat\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\x03\"D\n\x10GetStatsResponse\x12\x30\n\x04stat\x18\x01 \x01(\x0b\x32\".v2ray.core.app.stats.command.Stat\"U\n\x11QueryStatsRequest\x12\x0f\n\x07pattern\x18\x01 \x01(\t\x12\r\n\x05reset\x18\x02 \x01(\x08\x12\x10\n\x08patterns\x18\x03 \x03(\t\x12\x0e\n\x06regexp\x18\x04 \x01(\x08\"F\n\x12QueryStatsResponse\x12\x30\n\x04stat\x18\x01 \x03(\x0b\x32\".v2ray.core.app.stats.command.Stat\"\x11\n\x0fSysStatsRequest\"\xc2\x01\n\x10SysStatsResponse\x12\x14\n\x0cNumGoroutine\x18\x01 \x01(\r\x12\r\n\x05NumGC\x18\x02 \x01(\r\x12\r\n\x05\x41lloc\x18\x03 \x01(\x04\x12\x12\n\nTotalAlloc\x18\x04 \x01(\x04\x12\x0b\n\x03Sys\x18\x05 \x01(\x04\x12\x0f\n\x07Mallocs\x18\x06 \x01(\x04\x12\r\n\x05\x46rees\x18\x07 \x01(\x04\x12\x13\n\x0bLiveObjects\x18\x08 \x01(\x04\x12\x14\n\x0cPauseTotalNs\x18\t \x01(\x04\x12\x0e\n\x06Uptime\x18\n \x01(\r\"&\n\x06\x43onfig:\x1c\x82\xb5\x18\r\n\x0bgrpcservice\x82\xb5\x18\x07\x12\x05stats2\xde\x02\n\x0cStatsService\x12k\n\x08GetStats\x12-.v2ray.core.app.stats.command.GetStatsRequest\x1a..v2ray.core.app.stats.command.GetStatsResponse\"\x00\x12q\n\nQueryStats\x12/.v2ray.core.app.stats.command.QueryStatsRequest\x1a\x30.v2ray.core.app.stats.command.QueryStatsResponse\"\x00\x12n\n\x0bGetSysStats\x12-.v2ray.core.app.stats.command.SysStatsRequest\x1a..v2ray.core.app.stats.command.SysStatsResponse\"\x00\x42u\n com.v2ray.core.app.stats.commandP\x01Z0github.com/v2fly/v2ray-core/v5/app/stats/command\xaa\x02\x1cV2Ray.Core.App.Stats.Commandb\x06proto3')
 
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, globals())
 _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'stats_pb2', globals())
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'Z2github.com/sagernet/sing-box/experimental/v2rayapi'
-  _GETSTATSREQUEST._serialized_start=38
-  _GETSTATSREQUEST._serialized_end=84
-  _STAT._serialized_start=86
-  _STAT._serialized_end=121
-  _GETSTATSRESPONSE._serialized_start=123
-  _GETSTATSRESPONSE._serialized_end=184
-  _QUERYSTATSREQUEST._serialized_start=186
-  _QUERYSTATSREQUEST._serialized_end=271
-  _QUERYSTATSRESPONSE._serialized_start=273
-  _QUERYSTATSRESPONSE._serialized_end=336
-  _SYSSTATSREQUEST._serialized_start=338
-  _SYSSTATSREQUEST._serialized_end=355
-  _SYSSTATSRESPONSE._serialized_start=358
-  _SYSSTATSRESPONSE._serialized_end=552
-  _STATSSERVICE._serialized_start=555
-  _STATSSERVICE._serialized_end=863
+  DESCRIPTOR._serialized_options = b'\n com.v2ray.core.app.stats.commandP\001Z0github.com/v2fly/v2ray-core/v5/app/stats/command\252\002\034V2Ray.Core.App.Stats.Command'
+  _CONFIG._options = None
+  _CONFIG._serialized_options = b'\202\265\030\r\n\013grpcservice\202\265\030\007\022\005stats'
+  _GETSTATSREQUEST._serialized_start=63
+  _GETSTATSREQUEST._serialized_end=109
+  _STAT._serialized_start=111
+  _STAT._serialized_end=146
+  _GETSTATSRESPONSE._serialized_start=148
+  _GETSTATSRESPONSE._serialized_end=216
+  _QUERYSTATSREQUEST._serialized_start=218
+  _QUERYSTATSREQUEST._serialized_end=303
+  _QUERYSTATSRESPONSE._serialized_start=305
+  _QUERYSTATSRESPONSE._serialized_end=375
+  _SYSSTATSREQUEST._serialized_start=377
+  _SYSSTATSREQUEST._serialized_end=394
+  _SYSSTATSRESPONSE._serialized_start=397
+  _SYSSTATSRESPONSE._serialized_end=591
+  _CONFIG._serialized_start=593
+  _CONFIG._serialized_end=631
+  _STATSSERVICE._serialized_start=634
+  _STATSSERVICE._serialized_end=984
 # @@protoc_insertion_point(module_scope)
