@@ -7,7 +7,19 @@ Changelog
 
 Fix
 ~~~
+- Bug. [hiddify]
+
+
+3.1.0 (2023-05-20)
+------------------
+
+Fix
+~~~
 - Singbox. [hiddify]
+
+Other
+~~~~~
+- Release: version 3.1.0 🚀 [hiddify]
 
 
 3.0.4 (2023-05-18)
