@@ -5,6 +5,14 @@ Changelog
 (unreleased)
 ------------
 
+Fix
+~~~
+- Singbox. [hiddify]
+
+
+3.0.4 (2023-05-18)
+------------------
+
 New
 ~~~
 - Add reset to statsquery. [hiddify]
@@ -12,6 +20,10 @@ New
 Fix
 ~~~
 - Bug. [hiddify]
+
+Other
+~~~~~
+- Release: version 3.0.4 🚀 [hiddify]
 
 
 3.0.3 (2023-05-18)
