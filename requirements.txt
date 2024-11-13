@@ -5,4 +5,4 @@
 # You can also run `make switch-to-poetry` to use the poetry package manager.
 
 grpcio
-grpcio-tools==1.51.1
+grpcio-tools<2.0.0
