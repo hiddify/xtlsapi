@@ -11,7 +11,7 @@ from google.protobuf import symbol_database as _symbol_database
 _sym_db = _symbol_database.Default()
 
 
-from xtlsapi.xray_api.transport.internet import config_pb2 as transport_dot_internet_dot_config__pb2
+from xtlsapi.xray_api.xtlsapi.xray_api.transport.internet import config_pb2 as transport_dot_internet_dot_config__pb2
 
 
 DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x1dtransport/global/config.proto\x12\x0exray.transport\x1a\x1ftransport/internet/config.proto\"R\n\x06\x43onfig\x12\x44\n\x12transport_settings\x18\x01 \x03(\x0b\x32(.xray.transport.internet.TransportConfig:\x02\x18\x01\x42\x61\n\x19\x63om.xray.transport.globalP\x01Z*github.com/xtls/xray-core/transport/global\xaa\x02\x15Xray.Transport.Globalb\x06proto3')

@@ -4,9 +4,9 @@ import os
 from pathlib import Path
 
 package_name="xtlsapi.xray_api"
-out="/opt/xtlsapi/xtlsapi/xray_api/"
+out="/workspaces/xtlsapi/xtlsapi/xray_api/"
 #out="xtlsapi/xray_api"
-xray_src="/opt/Xray-core/"
+xray_src="/workspaces/xtlsapi/Xray-core/"
 # create the output directory
 Path(out).mkdir(parents=True, exist_ok=True)
 
@@ -36,7 +36,7 @@ for filename in glob.iglob(f'{xray_src}/**/*.proto', recursive=True):
         output = stream.read()
         if output != '':
             print(''.join(['protoc error/info for file ', filename, ' - ', output]))
-
+    
 # get the python files in the base directory
 base_pys = set()
 

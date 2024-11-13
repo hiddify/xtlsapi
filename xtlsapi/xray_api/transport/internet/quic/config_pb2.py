@@ -11,8 +11,8 @@ from google.protobuf import symbol_database as _symbol_database
 _sym_db = _symbol_database.Default()
 
 
-from xtlsapi.xray_api.common.serial import typed_message_pb2 as common_dot_serial_dot_typed__message__pb2
-from xtlsapi.xray_api.common.protocol import headers_pb2 as common_dot_protocol_dot_headers__pb2
+from xtlsapi.xray_api.xtlsapi.xray_api.common.serial import typed_message_pb2 as common_dot_serial_dot_typed__message__pb2
+from xtlsapi.xray_api.xtlsapi.xray_api.common.protocol import headers_pb2 as common_dot_protocol_dot_headers__pb2
 
 
 DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n$transport/internet/quic/config.proto\x12\x1cxray.transport.internet.quic\x1a!common/serial/typed_message.proto\x1a\x1d\x63ommon/protocol/headers.proto\"\x7f\n\x06\x43onfig\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\x36\n\x08security\x18\x02 \x01(\x0b\x32$.xray.common.protocol.SecurityConfig\x12\x30\n\x06header\x18\x03 \x01(\x0b\x32 .xray.common.serial.TypedMessageBv\n com.xray.transport.internet.quicP\x01Z1github.com/xtls/xray-core/transport/internet/quic\xaa\x02\x1cXray.Transport.Internet.Quicb\x06proto3')
