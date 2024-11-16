@@ -12,7 +12,7 @@ class AddClient(BaseService):
         try:
             if protocol=='vmess':
                 from xtlsapi.xray_api.proxy.vmess import account_pb2
-                account=account_pb2.Account(id=user_id_or_password, alter_id=alter_id)
+                account=account_pb2.Account(id=user_id_or_password)
             elif protocol=='vless':
                 from xtlsapi.xray_api.proxy.vless import account_pb2
                 account=account_pb2.Account(id=user_id_or_password,flow=flow,encryption="none")
